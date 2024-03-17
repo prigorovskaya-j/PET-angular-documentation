@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutProjectPage } from './pages/about-project-page/about-project-page.component';
 import { RoutingPage } from './pages/routing-page/routing-page.component';
+import { BreadcrumsModule } from './components/breadcrumbs/breadcrumbs.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RoutingPage } from './pages/routing-page/routing-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BreadcrumsModule
   ],
   providers: [],  
   bootstrap: [AppComponent]

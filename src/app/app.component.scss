@@ -290,3 +290,10 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+.workspace {
+    display: flex;
+    &_menu{
+      min-width: 15%;
+    }
+}

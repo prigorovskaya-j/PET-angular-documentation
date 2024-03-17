@@ -1,0 +1,8 @@
+<ul class="breadcrumb">
+  <li class="breadcrumb__item" *ngFor="let breadcrumb of (breadcrumbs$ | async); let last = last; let i = index">
+    <a id="Breadcrumbs{{i}}" *ngIf="!last; else inActiveLink" [routerLink]="breadcrumb?.url">{{ breadcrumb?.label }}</a>
+    <ng-template #inActiveLink>
+      <span>{{breadcrumb.label}}</span>
+    </ng-template>
+  </li>
+</ul>

@@ -5,8 +5,8 @@ import { RoutingPage } from './pages/routing-page/routing-page.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: '/about-project-page', pathMatch: 'full' },
-  { path: 'about-project-page', component: AboutProjectPage },  
-  { path: 'routing-page', component: RoutingPage },
+  { path: 'about-project-page', component: AboutProjectPage, data: { breadcrumb: 'О проекте' } },  
+  { path: 'routing-page', component: RoutingPage, data: { breadcrumb: 'Роутинг и навигация' } },
 ];
 
 @NgModule({
